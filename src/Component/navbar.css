@@ -1,0 +1,198 @@
+.nav__container {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+}
+
+nav{
+    width: 100%;
+    background-color: var(--background--color-pink);
+    /* background-color: aqua; */
+    padding: 20px 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    margin: 0;
+}
+
+ul.nav__link{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0!important;
+}
+
+.nav__container img {
+    height: 20px;
+    width: 180px;
+    /* margin-top: 5px; */
+}
+
+ul.nav__link li a{
+    color: var(--primary--text-black);
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+ul.nav__link li a:hover {
+    color: var(--primary--text-hover);
+    transition: var(--transition);
+}
+
+
+a.nav__link--item{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+li.active-nav{
+    color: var(--primary--text-hover);
+}
+
+
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    button.nav__toggle-btn{
+        display: none;
+    }
+
+    ul.nav__link li.icon{
+        display: none;
+    }
+}
+
+/* MEDIA QUERIES FOR DESKTOP */
+
+@media screen and (min-width: 992px){
+    button.nav__toggle-btn{
+        display: none;
+    }
+
+    .nav__container img{
+        height: 30px;
+        width: 240px;
+    }
+    ul.nav__link li.icon{
+        display: none;
+    }
+}
+
+/* MEDIA QUERIES FOR TABLET */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    ul.nav__link li a[href = "/pages/career"]{
+        display: none;
+    }
+    ul.nav__link li a[href = "/collections/ca-phe-tai-nha"]{
+        display: none;
+    }
+    ul.nav__link li a[href = "/collections/tra-tai-nha"]{
+        display: none;
+    }
+
+    ul.nav__link li a[href = "/pages/story"]{
+        display: none;
+    }
+    ul.nav__link li a[href = "/pages/shop"]{
+        display: none;
+    }
+
+    ul.nav__link li.icon{
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 991px){
+
+    .nav__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul.headermeta__container--item{
+        padding: 0;
+        margin: 0;
+    }
+
+    button.nav__toggle-btn{
+        display: block;
+        /* padding-bottom: -10px; */
+        text-align: left;
+        left: 0;
+        position: absolute;
+        padding-left: 10px;
+        background-color: var(--background--color-pink);
+        font-size: 20px;
+    }
+
+    .nav__container img{
+        height: 30px;
+        width: 240px;
+    }
+
+    ul.show__nav{
+        display: block;
+        left: 0;
+        top: 0;
+        bottom: -10%;
+        width: 252px;
+        position: fixed;
+        background-color: #fff;
+        padding: 0;
+        overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: gray;
+    }
+
+    ul.show__nav li{
+        padding: 10px 0 10px 30px ;
+        border-bottom: 0.5px solid #f1ecec;
+    }
+
+    ul.hide__nav{
+        display: none;
+    }
+
+    ul.nav__link li.icon{
+        display: none;
+        content: "";
+        padding: 10px 0 10px 15px;
+    }
+
+    ul.nav__link li.icon:first-child{
+        display: flex;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+}
+
+
+
+/* MEDIA QUERIES FOR TABLET AND MOBILE LARGE */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    /* ul.nav__link{
+        display: none;
+    } */
+    
+}
+
+/* MEDIA QUERIES FOR MOBILE */
+
+@media screen and (max-width: 1400px){
+    
+}

@@ -37,7 +37,7 @@ const Home = () => {
 
         {/* Container Home */}
         <section id='container__home'>
-          <div className="container container__home col-12">
+          <div className="container__home col-12">
             <ul className="container__home col-12">
               <a href=""  className="container__home--item col-lg-6 col-md-12 col-sm-12 col-12"><li>
                 <img src={Banner1} alt="" className='home__item--image' />

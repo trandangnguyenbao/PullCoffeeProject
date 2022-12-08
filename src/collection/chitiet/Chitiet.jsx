@@ -129,7 +129,7 @@ const Chitiet = ({match, history}) => {
                     )}
                     })}
              </div>
-             <hr />
+             <hr/>
              <div className="container__description--relate">
                   <h3>Sản phẩm liên quan</h3>
                   <div className="container__description--relate--product">

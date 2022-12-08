@@ -193,7 +193,7 @@ const Shop = () => {
                     }
                 })
               } */}
-              <button>Xem Thêm</button>
+              {/* <button>Xem Thêm</button> */}
           </div>
       </div>
     </section>

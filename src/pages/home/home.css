@@ -439,13 +439,18 @@ li.home__story--coffeeholic p{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    .container__home{
+        padding: 0 6%;
+    }
 
 }
 
 /* MEDIA QUERIES FOR DESKTOP */
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 1199px){
+    .container__home{
+        padding: 0 3% 0 4%;
+    }
     li.container__cloudfeelayout img {
         height: 100%;
         width: 100%;
@@ -482,6 +487,9 @@ li.home__story--coffeeholic p{
 /* MEDIA QUERIES FOR TABLET */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container__home{
+        padding: 0 2.5% 0 4%;
+    }
     li.container__cloudfeelayout img {
         height: 100%;
         width: 100%;
@@ -500,6 +508,7 @@ li.home__story--coffeeholic p{
         color: #fa9842;
         transition: var(--transition);
     }
+
 } 
 
 
@@ -533,6 +542,15 @@ li.home__story--coffeeholic p{
 
 /* MEDIA QUERIES FOR TABLET AND MOBILE LARGE */
 @media screen and (min-width: 600px) and (max-width: 767px) {
+    section#homestory{
+        height: auto;
+        width: 100%;
+        background-color: var(--background--color-pink);
+        padding: 30px 0 2rem 0;
+    }
+    .container__home{
+        padding: 0 0.5% 0 2.5%;
+    }
     li.container__cloudfeelayout img {
         height: 100%;
         width: 100%;
@@ -595,6 +613,15 @@ li.home__story--coffeeholic p{
 /* MEDIA QUERIES FOR MOBILE */
 
 @media screen and (max-width: 600px){
+    section#homestory{
+        height: auto;
+        width: 100%;
+        background-color: var(--background--color-pink);
+        padding: 30px 0 2rem 0;
+    }
+    .container__home{
+        padding: 0 0 0 3%;
+    }
     li.container__cloudfeelayout img {
         height: 100%;
         width: 100%;
@@ -654,5 +681,32 @@ li.home__story--coffeeholic p{
 
     a.slidehome__item--img{
         height: 400px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    section#container__home {
+    height: auto;
+    max-width: 100%;
+    padding: 1rem 0;
+    }
+    a.container__home--item li ,a.home__item--container li{
+    padding-right: 10px !important;
+    }
+    .container__home{
+        padding: 0 0 0 1%;
+    }
+    ul.home__item--icon{
+        display: none;
+    }
+
+    li.home__item--icon{
+        display: none;
+    }
+    section#homestory{
+        height: auto;
+        width: 100%;
+        background-color: var(--background--color-pink);
+        padding: 30px 0 1rem 0;
     }
 }

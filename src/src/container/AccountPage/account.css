@@ -1,0 +1,211 @@
+.container__accountpage{
+    padding: 2rem 0;
+    display: flex;
+    min-height: 700px;
+    height: auto;
+}
+
+
+ul.container__accountpage--navbar{
+    padding: 0;
+}
+
+ul.container__accountpage--navbar hr{
+    width: 80%;
+}
+
+li.container__accountpage--navbar{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+li.container__accountpage--navbar p.account{
+    content: '';
+    margin: 0px 0 0 0;
+}
+
+li.container__accountpage--navbar i{
+    color: #9c9a9a;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+li.container__accountpage--navbar p:not(:first-child){
+    padding: 8px 0 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #575757;
+}
+
+li.active p:not(:first-child), li.active i {
+    color: var(--primary--text-hover);
+}
+
+.container__accountpage--contain{
+    padding: 10px 0;
+}
+
+.container__accountpage--contain--item{
+    border: 2px solid #d5d5d5;
+    border-radius: 10px;
+    padding: 10px 0;
+    background-color: var(--background--color-pink);
+}
+
+.contain--item{
+    display: flex;
+}
+
+.contain--item div{
+    padding: 0 20px;
+    width: 100%;
+}
+
+.contain--item div input#phone, .contain--item input#username
+, .contain--item input#gender, .contain--item input#birthday
+, .contain--item input#address, .contain--item input#password
+ {
+    border: 1px solid #d5d5d5;
+    margin: 5px 0px 10px 0; 
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+}
+
+.contain--item div label{
+    font-weight: 600;
+}
+
+button.Update{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form .update{
+    padding: 1rem 30%;
+}
+
+form .update button.Update{
+    height: 45px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--primary--text-hover);
+}
+
+
+
+.container__accountpage ul.container__icon a li{
+    font-size: 21px;
+    padding: 3px 10px;
+    border: 2px solid var(--primary--text-hover);
+    background-color: var(--primary--text-hover);
+    margin-bottom: 5px;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.5s all ease-in;
+}
+
+.container__accountpage--contain--item form{
+    background-color: var(--background--color-pink);
+}
+
+.container__accountpage .container__icon{
+    position: fixed;
+    top: 65%;
+    right: 5%;
+}
+
+
+
+
+@media screen and (max-width: 769px){
+    .container__accountpage{
+        padding: 2rem 0;
+        display: block;
+        height: 100%;
+    }
+
+    ul.container__accountpage--navbar hr{
+        width: 100%;
+    }
+}
+
+
+
+/* Order */
+.container__order--container{
+    /* padding: 20px; */
+    border-radius: 1px solid var(--background--color-pink);
+    background-color: var(--background--color-pink);
+    box-shadow: 2px 2px 4px 4px #e8e7e7;
+}
+
+.container__order--container tr th{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 20px;
+    /* width: 100%; */
+    text-align: center;
+    border: 1px solid #d5d5d5; 
+    background-color: rgb(241, 147, 147);
+    
+}
+
+.container__order--container tr th:last-child{
+    width: 33%;
+}
+
+.container__order--container tr td {
+    font-size: 18px;
+    font-weight: 500;
+    color: #212020;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #d5d5d5;
+}
+
+.container__order--container tr {
+    border: 1px solid #d5d5d5;
+    width: 100%;
+}
+
+.container__order--container .container__order--none{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5% 0 10% 0;
+    margin: auto;
+    display: block;
+}
+
+.container__order--none i {
+    font-size: 5rem;
+    color: var(--primary--text-hover);
+}
+
+.container__order--none p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container__order--container ul li{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #d5d5d5; 
+    background-color: rgb(241, 147, 147);
+}
+
+.container__order--container ul{
+    display: flex;
+    padding: 0;
+}

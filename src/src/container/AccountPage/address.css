@@ -1,0 +1,137 @@
+.container__addressorder--contain{
+    width: 100%;
+    background-color: var(--background--color-pink);
+    border: 2px solid #d5d5d5;
+    padding: 0 20px;
+}
+
+.container__addressorder--contain p {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+
+.container__addressorder--contain p i {
+    padding-right: 10px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(141, 141, 141, 0.5);
+    z-index: 9999999;
+    padding: 10% 25%;
+    /* display: none; */
+}
+
+
+.overlay .container__addressorder--contain{
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0px 0px 5px 5px #787777;
+    padding: 1rem 20px;
+}
+
+.container__addressorder--contain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__addressorder--container--info h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.container__addressorder--container--info {
+    width: 50%;
+    padding: 0 15px 0 0;
+}
+
+
+.container__addressorder--container--info input{
+    width: 100%;
+    border: 1px solid #d5d5d5;
+    margin: 8px 8px 8px 0;
+    padding: 3px 10px;
+}
+
+.container__addressorder--container--address{
+    width: 50%;
+    padding: 0 0 0 15px;
+}
+
+.container__addressorder--container--address h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.container__addressorder--container--address select, 
+.container__addressorder--container--address input{
+    width: 100%;
+    border: 1px solid #d5d5d5;
+    margin: 8px 8px 8px 0;
+    padding: 0px 10px;
+    height: 35px;
+    color: var(--primary--text-color);
+}
+
+.container__addressorder--container--address .action{
+    padding: 1rem 0;
+}
+
+.action button.cancle{
+    width: 45%;
+    height: 40px;
+    background-color: rgb(229, 41, 41);
+    color: #fff;
+    margin: 0 10px 0 0 ;
+}
+.action button.Add{
+    width: 45%;
+    height: 40px;
+    background-color: rgb(78, 46, 238);
+    color: #fff;
+    margin: 0 0 0 10px;
+}
+
+.item--close{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.item--close i{
+    font-size: 20px;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.container__addressorder--contains{
+    margin: 1rem 0;
+    padding: 0 20px;
+    width: 100%;
+    background-color: var(--background--color-pink);
+    border: 2px solid #d5d5d5;
+}
+
+p.container__addressorder--contains--name{
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    margin: 0;
+}
+
+.container__addressorder--contains--name span.container__addressorder--contains--item{
+    font-size: 25px;
+    color: var(--primary--text-color);
+}

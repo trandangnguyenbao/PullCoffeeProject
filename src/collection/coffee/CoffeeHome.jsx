@@ -8,7 +8,7 @@ import Products from '../../asset/fake-data/ProductForCatalog'
 // import '../product/product.css'
 const CoffeeHome = () => {
   return (
-    <div className="container__producthome">
+    <div className="container container__producthome">
         <div className="container__producthome--title">
         <div className="container__producthome--item col-lg-12 col-md-12 col-sm-12 col-12 row">
         <h1 className="container__producthome--title">Cà Phê Tại Nhà</h1>
